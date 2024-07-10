@@ -4,7 +4,7 @@ import  MainContainer from "./MainContainer"
 
 const Body = () => {
   return (
-    <div>
+    <div className='min-h-full'>
       <Sidebar/>
       <MainContainer/>
     </div>
