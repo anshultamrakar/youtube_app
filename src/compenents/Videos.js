@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Button = ({btns}) => {
+const Videos = () => {
   return (
     <div>
-      {btns}
+        Videos
     </div>
   )
 }
 
-export default Button
+export default Videos

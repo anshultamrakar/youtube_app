@@ -6,7 +6,7 @@ const Sidebar = () => {
  
   if(isMenuOpen) return null 
   return (
-    <div className='m-4'>
+    <div className='m-4 shadow-lg p-4'>
       <ul>
         <li>Home</li>
         <li>Shorts</li>
