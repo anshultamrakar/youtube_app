@@ -6,13 +6,12 @@ const Sidebar = () => {
  
   if(isMenuOpen) return null 
   return (
-    <div className='m-4 shadow-lg p-4'>
-      <ul>
+    <div className='m-4 shadow-lg p-4 w-72'>
+      <ul className='py-2'>
         <li>Home</li>
         <li>Shorts</li>
         <li>Subscription</li>
       </ul>
-     
       <ul>
         <p className=''>You</p>
         <li>History</li>

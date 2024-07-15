@@ -1,8 +1,11 @@
 import React from 'react'
+import Videos from "./Videos"
 
 const VideoContainer = () => {
   return (
-    <div>VideoContainer</div>
+    <div>
+      <Videos/>
+    </div>
   )
 }
 
