@@ -1,26 +1,33 @@
 
 import Header from "./compenents/Header";
 import Body from "./compenents/Body";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import MainContainer from "./compenents/MainContainer";
 import VideoWatch from "./compenents/VideoWatch";
-import {createBrowserRouter , RouterProvider} from "react-router-dom"
 
 
-const approuter = createBrowserRouter([
-  {
+const approuter  = createBrowserRouter([
+ {
+  path : "/",
+  element : <Body/>,
+  children : [{
     path : "/",
-    element : <Body/>
+    element : <MainContainer/>
   },
   {
     path : "/watch",
     element : <VideoWatch/>
   }
+
+]
+ }
 ])
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Body/>
+      <RouterProvider router = {approuter}/>
     </div>
   );
 }
